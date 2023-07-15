@@ -1,0 +1,88 @@
+use desastresdb
+db.createCollection("habilidad")
+db.createCollection("voluntario")
+
+// Insertar Juan
+db.Voluntario.insertOne({
+  nombre: "juan",
+  correo: "juan@voluntario.cl",
+  password: "207738050",
+  habilidades: [
+    {
+      descripcion: "Programación",
+      codigo: "HAB-001"
+    },
+    {
+      descripcion: "Cocina",
+      codigo: "HAB-002"
+    }
+  ]
+});
+
+// Insertar Diego
+db.Voluntario.insertOne({
+  nombre: "diego",
+  correo: "diego@voluntario.cl",
+  password: "207738050",
+  habilidades: [
+    {
+      descripcion: "Programación",
+      codigo: "HAB-001"
+    },
+    {
+      descripcion: "Mercadeo",
+      codigo: "HAB-003"
+    }
+  ]
+});
+
+// Insertar Samoth
+db.Voluntario.insertOne({
+  nombre: "samoth",
+  correo: "samoth@voluntario.cl",
+  password: "207738050",
+  habilidades: [
+    {
+      descripcion: "Programación",
+      codigo: "HAB-001"
+    },
+    {
+      descripcion: "Estadistica",
+      codigo: "HAB-004"
+    }
+  ]
+});
+
+// Insertar Matias
+db.Voluntario.insertOne({
+  nombre: "matias",
+  correo: "matias@volunatio.cl",
+  password: "207738050",
+  habilidades: [
+    {
+      descripcion: "Programación",
+      codigo: "HAB-001"
+    },
+    {
+      descripcion: "AlboCampeon",
+      codigo: "HAB-005"
+    }
+  ]
+});
+
+// Insertar Cristobal
+db.Voluntario.insertOne({
+  nombre: "cristobal",
+  correo: "cristobal@voluntario.cl",
+  password: "207738050",
+  habilidades: [
+    {
+      descripcion: "Programación",
+      codigo: "HAB-001"
+    },
+    {
+      descripcion: "Insano",
+      codigo: "HAB-006"
+    }
+  ]
+});
