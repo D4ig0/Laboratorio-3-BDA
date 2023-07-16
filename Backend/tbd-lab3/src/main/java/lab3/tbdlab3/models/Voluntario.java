@@ -22,6 +22,6 @@ public class Voluntario {
     @JsonProperty(value = "password", access = JsonProperty.Access.WRITE_ONLY)
     private String password;
     private List<Habilidad> habilidades;
-    // @JsonProperty(access = JsonProperty.Access.READ_ONLY)
-    // private Integer numeroHabilidades;
+    @JsonProperty(access = JsonProperty.Access.READ_ONLY)
+    private Integer numeroHabilidades;
 }

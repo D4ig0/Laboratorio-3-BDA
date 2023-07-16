@@ -17,5 +17,5 @@ public interface IVoluntarioRepository {
     List<Habilidad> getHabilidadesVoluntario(String correo);
     void deleteHabilidadVoluntario(String correo, String Habilidad);
     void deleteHabilidadesVoluntario(String correo);
-    Integer countHabilidades();
+    List<Voluntario> countHabilidades();
 }

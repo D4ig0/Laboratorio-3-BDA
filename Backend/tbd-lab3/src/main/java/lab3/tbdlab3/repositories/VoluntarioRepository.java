@@ -87,21 +87,13 @@ public class VoluntarioRepository implements IVoluntarioRepository {
     }
 
     @Override
-    public Integer countHabilidades() {
+    public List<Voluntario> countHabilidades() {
         MongoCollection<Voluntario> collection = database.getCollection("voluntario", Voluntario.class);
         List<Voluntario> voluntarios = collection.find().into(new ArrayList<>());
-        Integer count = 0;
-        ArrayList lol = new ArrayList();
         for (Voluntario voluntario : voluntarios) {
-            for(Habilidad habilidad : voluntario.getHabilidades()){
-                if(!lol.contains(habilidad.getCodigo())){
-                    System.out.println(habilidad.getCodigo());
-                    count++;
-                    lol.add(habilidad.getCodigo());
-                }
-            }
+            int cantidadHabilidades = voluntario.getHabilidades().size();
+            voluntario.setNumeroHabilidades(cantidadHabilidades);
         }
-        return count;
+        return voluntarios;
     }
 }
-

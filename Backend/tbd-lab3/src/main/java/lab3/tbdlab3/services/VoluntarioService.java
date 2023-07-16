@@ -36,8 +36,7 @@ public class VoluntarioService {
         voluntarioRepository.createVoluntario(voluntario);
     }
 
-    public Integer countHabilidades() {
-        System.out.println("loool");
+    public List<Voluntario> countHabilidades() {
         return voluntarioRepository.countHabilidades();
     }
 

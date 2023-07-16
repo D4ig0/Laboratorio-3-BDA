@@ -80,7 +80,7 @@ public class VoluntarioController {
     }
 
     @GetMapping("/count")
-    public ResponseEntity<Integer> countHabilidades(){
+    public ResponseEntity<List<Voluntario>> countHabilidades(){
         try {
             return ResponseEntity.ok(voluntarioService.countHabilidades());
         }
