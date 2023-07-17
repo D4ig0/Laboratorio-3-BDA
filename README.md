@@ -39,7 +39,7 @@ Laboratorio 3 de la asignatura de Base de Datos Avanzadas de la Universidad de S
 ---
 
 Para comenzar se debe instalar un entorno de desarrollo, donde para este caso utilizamos [Intellij IDEA][10] en la versión 2022.2.2. 
-Después se debe descargar [MongoDb][3] en la versión 6.0.8. Luego una vez instalada la aplicación debemos abrir la consola e ingresar el siguiente comando para  crear y poblar la base de datos:
+Después se debe descargar [MongoDb][3] en la versión 6.0.8. También debemos descargar la versión 1.10.1 de [Mongosh][12], este contendrá una carpeta BIN, la cual se debe agregar a las variables de entorno. Luego una vez instalada la aplicación debemos abrir la consola e ingresar el siguiente comando para  crear y poblar la base de datos:
 
 ```sh
 mongosh < dummy.json
@@ -82,3 +82,4 @@ Los diagramas implementados para este laboratorio son los siguientes:
 [9]: https://www.usach.cl/
 [10]: https://www.jetbrains.com/es-es/idea/download/?section=windows
 [11]: https://www.postman.com/downloads/
+[12]: https://www.mongodb.com/try/download/shell
