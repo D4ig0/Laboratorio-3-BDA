@@ -3,7 +3,7 @@ db.createCollection("habilidad")
 db.createCollection("voluntario")
 
 // Insertar Juan
-db.Voluntario.insertOne({
+db.voluntario.insertOne({
   nombre: "juan",
   correo: "juan@voluntario.cl",
   password: "207738050",
@@ -20,7 +20,7 @@ db.Voluntario.insertOne({
 });
 
 // Insertar Diego
-db.Voluntario.insertOne({
+db.voluntario.insertOne({
   nombre: "diego",
   correo: "diego@voluntario.cl",
   password: "207738050",
@@ -37,7 +37,7 @@ db.Voluntario.insertOne({
 });
 
 // Insertar Samoth
-db.Voluntario.insertOne({
+db.voluntario.insertOne({
   nombre: "samoth",
   correo: "samoth@voluntario.cl",
   password: "207738050",
@@ -54,7 +54,7 @@ db.Voluntario.insertOne({
 });
 
 // Insertar Matias
-db.Voluntario.insertOne({
+db.voluntario.insertOne({
   nombre: "matias",
   correo: "matias@volunatio.cl",
   password: "207738050",
@@ -71,7 +71,7 @@ db.Voluntario.insertOne({
 });
 
 // Insertar Cristobal
-db.Voluntario.insertOne({
+db.voluntario.insertOne({
   nombre: "cristobal",
   correo: "cristobal@voluntario.cl",
   password: "207738050",
