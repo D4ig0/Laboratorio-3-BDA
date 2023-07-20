@@ -65,6 +65,20 @@ public class VoluntarioController {
         }
     }
 
+    @PutMapping("/habilidad/{correo}")
+    public ResponseEntity agregarHabilidad(@PathVariable("correo") String correo, @RequestParam("habilidades") List<Habilidad> habilidades){
+        try {
+            voluntarioService.agregarHabilidades(correo, habilidades);
+            return ResponseEntity.ok(null);
+        }
+        catch (IllegalArgumentException e){
+            return ResponseEntity.badRequest().body(e.getMessage());
+        }
+        catch (RuntimeException e){
+            return ResponseEntity.internalServerError().body(e.getMessage());
+        }
+    }
+
     @DeleteMapping("/{correo}")
     public ResponseEntity deleteVoluntario(@PathVariable("correo") String correo){
         try {
